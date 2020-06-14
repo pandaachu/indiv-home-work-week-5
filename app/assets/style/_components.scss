@@ -1,0 +1,32 @@
+.imgCircle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nav-link.active{
+  color: $high-light;
+  border-left: 4px solid $high-light;
+}
+// .page-item.active{
+//   .page-link{
+//     background-color: $high-light;
+//   }
+// }
+
+
+// .collapseIn--fromBottom{
+//   transition: width 2s ease;
+//   overflow: hidden;
+//   display: none;
+//   bottom: 0;
+//   left: 0;
+// }
+// .collapseIn--fromBottom.show{
+//   // top: 0;
+//   // left: 0;
+//   // width: 100%;
+//   display: block;
+// }
+

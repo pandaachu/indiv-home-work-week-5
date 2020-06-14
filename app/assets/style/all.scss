@@ -1,3 +1,26 @@
+// vendors
 @import "functions";
-@import "./helpers/variables";
+@import "mixins";
+@import "utilities/variables";
 @import "bootstrap";
+
+// base
+@import "base/reboot";
+@import "base/typography";
+
+// components
+@import "components";
+
+// layout
+// @import "layout/navbar";
+@import "layout/gird";
+
+// pages
+// @import "pages/index";
+// @import "pages/faq";
+
+// utilities
+// @import "utilities/background";
+// @import "utilities/border";
+@import "utilities/position";
+@import "utilities/size";

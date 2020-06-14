@@ -1,36 +1,665 @@
 ---
-title: Boostrap Index
+title: index
 layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
 
-<div class="container">
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    我來改東西
-  </div>
+<!-- Question -->
+<div class="tab-pane fade" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab"></div>
+
+<!-- Assignment -->
+<div
+    class="l-assignment tab-pane fade show active"
+    id="assignment"
+    role="tabpanel"
+    aria-labelledby="assignment-tab"
+>
+    <!-- Assignment nav -->
+    <nav class="navbar navbar-expand navbar-light">
+        <a class="navbar-brand mr-8" href="#">Assignment</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav mr-auto">
+                <div class="nav-item dropdown">
+                    <a
+                        class="nav-link dropdown-toggle d-flex align-items-center text-primary"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        All Courses
+                        <i class="material-icons text-high-light">
+                            expand_more
+                        </i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+            <ul class="d-flex list-unstyled">
+                <li class="mr-6">
+                    <a href="">
+                        <i class="material-icons">
+                            search
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="material-icons">
+                            notifications_active
+                        </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- total nav -->
+    <nav class="container-fluid navbar navbar-expand navbar-light justify-content-between">
+        <div class="navbar-nav mr-auto">
+            <div class="nav-item dropdown">
+                <a
+                    class="nav-link dropdown-toggle d-flex align-items-center text-primary px-0"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                >
+                    All (4)
+                    <i class="material-icons text-high-light">
+                        expand_more
+                    </i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-muted">
+            <small>2 comments</small>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Assignment tabs -->
+            <div class="col-4">
+                <ul class="list-group">
+                    <li class="list-group-item active">
+                        <div class="d-flex justify-content-between">
+                            <small class="text-primary">Chapter Assignment 2</small>
+                            <small class="text-primary">4 hrs ago</small>
+                        </div>
+                        <h6 class="my-0 d-flex justify-content-between">
+                            Please check this file…
+                            <span>
+                                <small class="text-gray">Emily Wang</small>
+                            </span>
+                        </h6>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <small class="text-primary">Chapter Assignment 1</small>
+                            <small class="text-primary">12 hrs ago</small>
+                        </div>
+                        <h6 class="my-0 d-flex justify-content-between">
+                            My Homework
+                            <span>
+                                <small class="text-gray">David Xu</small>
+                            </span>
+                        </h6>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <small class="text-primary">Final Assignment</small>
+                            <small class="text-primary">18 hrs ago</small>
+                        </div>
+                        <h6 class="my-0 d-flex justify-content-between">
+                            Have a problem with this…
+                            <span>
+                                <small class="text-gray">Tony Wei</small>
+                            </span>
+                        </h6>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <small class="text-primary">Final Assignment</small>
+                            <small class="text-primary">19 hrs ago</small>
+                        </div>
+                        <h6 class="my-0 d-flex justify-content-between">
+                            Did I do it right?
+                            <span>
+                                <small class="text-gray">Christina Lin</small>
+                            </span>
+                        </h6>
+                    </li>
+                </ul>
+            </div>
+            <!-- Assignment comments -->
+            <div class="col-8">
+                <!-- comments area -->
+                <ul class="list-group p-relative">
+                    <li
+                        class="list-group-item active d-flex justify-content-between align-items-center"
+                    >
+                        <div>
+                            <small class="text-primary">Chapter Assignment 2 / HTML&CSS</small>
+                            <h6 class="my-0 d-flex justify-content-between">
+                                Please check this file for me, thanks!
+                            </h6>
+                        </div>
+                        <div>
+                            <i class="material-icons">
+                                more_vert
+                            </i>
+                        </div>
+                    </li>
+                    <li class="list-group-item mb-4">
+                        <div class="d-flex mb-4">
+                            <img
+                                class="card-img-bottom imgCircle mr-2"
+                                src="assets/images/emilywang.jpeg"
+                                alt=""
+                            />
+                            <div class="card border-0">
+                                <div class="card-body p-0 border-bottom pb-4">
+                                    <h5 class="card-title">Emily Wang</h5>
+                                    <p>
+                                        <small>10:38 AM (4 hours ago)</small>
+                                    </p>
+                                    <p class="card-text">
+                                        Hi Teacher, the attached file is my homework of chapter 2.
+                                        And here comes a question: Why in the following code the
+                                        height of the
+                                        <span class="text-high-light bg-secondary">div</span>
+                                        is bigger than the height of the
+                                        <span class="text-high-light bg-secondary">img</span>
+                                        ? There is a gap below the image, but it doesn’t seems to be
+                                        a padding/margin. What is the gap or extra space below
+                                        image?
+                                    </p>
+                                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                                    <button type="button" class="btn btn-secondary border">
+                                        <i class="material-icons">
+                                            attach_file
+                                        </i>
+                                        HW-2-David.zip
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <img
+                                class="card-img-bottom imgCircle mr-2"
+                                src="assets/images//andychen.jpeg"
+                                alt=""
+                            />
+                            <div class="card border-0">
+                                <div class="card-body p-0">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <h5 class="card-title">Andy Chen (You)</h5>
+                                            <p>
+                                                <small>13:24 AM (1 hours ago)</small>
+                                            </p>
+                                        </div>
+                                        <ul class="d-flex list-unstyled">
+                                            <li>
+                                                <a href="">
+                                                    <i class="material-icons">
+                                                        star_border
+                                                    </i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <i class="material-icons">
+                                                        edit
+                                                    </i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <p class="card-text">
+                                        Hi David, by default, an image is rendered inline, like a
+                                        letter so it sits on the same line that a, b, c and d sit
+                                        on. There is space below that line for the descenders you
+                                        find on letters like g, j, p and q.
+                                        <br />
+                                        You can:
+                                        <br />
+                                        • adjust the
+                                        <span class="text-high-light bg-secondary">
+                                            vertical-align
+                                        </span>
+                                        of the image to position it elsewhere (e.g. the
+                                        <span class="text-high-light bg-secondary">
+                                            middle
+                                        </span>
+                                        ) or
+                                        <br />
+                                        • change the
+                                        <span class="text-high-light bg-secondary">
+                                            display
+                                        </span>
+                                        so it isn’t inline.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- reply text area -->
+                    <!-- <ul class="list-group collapse collapseIn--fromBottom  p-absolute" id="collapseReply">
+                            <li
+                                class=" list-group-item active"
+                            >
+                                <ul class="d-flex">
+                                    <select>
+                                        <option value="Body Text">Body Text</option>
+                                    </select>
+                                    <li>
+                                        <a href="">
+                                            <i class="material-icons">
+                                                format_bold
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="material-icons">
+                                                format_italic
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="material-icons">
+                                                format_list_bulleted
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="material-icons">
+                                                format_list_numbered
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="material-icons">
+                                                insert_photo
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="material-icons">
+                                                insert_link
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="material-icons">chevron_left</i>
+                                        </a>
+                                        <a href="">
+                                            <i class="material-icons">chevron_right</i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <textarea
+                                    name=""
+                                    id=""
+                                    cols="30"
+                                    rows="10"
+                                    placeholder="Reply an answer…"
+                                    spellcheck="false"
+                                ></textarea>
+                            </li>
+                        </ul> -->
+                </ul>
+                <!-- comments footer -->
+                <div class="d-flex justify-content-between align-items-center">
+                    <ul class="d-flex list-unstyled">
+                        <li>
+                            <a href="#">
+                                <i class="material-icons">
+                                    chevron_left
+                                </i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="material-icons">
+                                    chevron_right
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                    <div>
+                        <button type="button" class="btn btn-outline-high-light mr-4">
+                            Mark as read
+                        </button>
+                        <button
+                            type="button"
+                            class="btn btn-outline-high-light"
+                            data-toggle="collapse"
+                            data-target="#collapseReply"
+                            aria-expanded="false"
+                            aria-controls="collapseReply"
+                        >
+                            Reply
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Admin -->
+<div class="tab-pane fade" id="admin" role="tabpanel" aria-labelledby="admin-tab">
+    <nav class="navbar navbar-expand navbar-light">
+        <a class="navbar-brand" href="#">Admin</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav mr-auto">
+                <div class="nav-item dropdown">
+                    <a
+                        class="nav-link dropdown-toggle d-flex align-items-center"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                    >
+                        <i class="material-icons text-high-light">
+                            add
+                        </i>
+                        Add New Admin
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+            <ul class="d-flex list-unstyled">
+                <li class="mr-6">
+                    <a href="">
+                        <i class="material-icons">
+                            search
+                        </i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="material-icons">
+                            notifications_active
+                        </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- table -->
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col" class="d-flex align-items-center border-0">
+                        ID
+                        <i class="material-icons text-high-light">
+                            arrow_downward
+                        </i>
+                    </th>
+                    <th class="border-0" scope="col">Name</th>
+                    <th class="border-0" scope="col">Email</th>
+                    <th class="border-0" scope="col">Verfied</th>
+                    <th class="border-0" scope="col"></th>
+                    <th class="border-0" scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border-primary">#1</td>
+                    <td class="border-primary">Emir Wicks</td>
+                    <td class="border-primary">emir.wicks@mail.com</td>
+                    <td class="border-primary">YES</td>
+                    <td class="border-primary">
+                        <a href="">
+                            <i class="material-icons">
+                                remove_red_eye
+                            </i>
+                        </a>
+                    </td>
+                    <td class="border-primary">
+                        <a href="">
+                            <i class="material-icons">
+                                edit
+                            </i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#2</td>
+                    <td>Zaina Goldsmith</td>
+                    <td>zaina.goldsmith@mail.com</td>
+                    <td>YES</td>
+                    <td>
+                        <a href="">
+                            <i class="material-icons">
+                                remove_red_eye
+                            </i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                            <i class="material-icons">
+                                edit
+                            </i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#3</td>
+                    <td>Mahima Lopez</td>
+                    <td>mahima.lopez@mail.com</td>
+                    <td>YES</td>
+                    <td>
+                        <a href="">
+                            <i class="material-icons">
+                                remove_red_eye
+                            </i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                            <i class="material-icons">
+                                edit
+                            </i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#4</td>
+                    <td>Pharrell Murray</td>
+                    <td>pharrell.murray@mail.com</td>
+                    <td>YES</td>
+                    <td>
+                        <a href="">
+                            <i class="material-icons">
+                                remove_red_eye
+                            </i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                            <i class="material-icons">
+                                edit
+                            </i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#5</td>
+                    <td>Annika Mcbride</td>
+                    <td>annikamcbride@mail.com</td>
+                    <td>YES</td>
+                    <td>
+                        <a href="">
+                            <i class="material-icons">
+                                remove_red_eye
+                            </i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                            <i class="material-icons">
+                                edit
+                            </i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#6</td>
+                    <td>Fatimah Clark</td>
+                    <td>Fatimah.Clark@mail.com</td>
+                    <td>YES</td>
+                    <td>
+                        <a href="">
+                            <i class="material-icons">
+                                remove_red_eye
+                            </i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                            <i class="material-icons">
+                                edit
+                            </i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#7</td>
+                    <td>Klaudia Rhodes</td>
+                    <td>klaudia.rhodes@mail.com</td>
+                    <td>YES</td>
+                    <td>
+                        <a href="">
+                            <i class="material-icons">
+                                remove_red_eye
+                            </i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                            <i class="material-icons">
+                                edit
+                            </i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#8</td>
+                    <td>Tillie Lucero</td>
+                    <td>tillie.lucero@mail.com</td>
+                    <td>YES</td>
+                    <td>
+                        <a href="">
+                            <i class="material-icons">
+                                remove_red_eye
+                            </i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                            <i class="material-icons">
+                                edit
+                            </i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>#9</td>
+                    <td>Sabrina Stephenson</td>
+                    <td>sabrina.stephenson@mail.com</td>
+                    <td>YES</td>
+                    <td>
+                        <a href="">
+                            <i class="material-icons">
+                                remove_red_eye
+                            </i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="">
+                            <i class="material-icons">
+                                edit
+                            </i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="border-bottom">#10</td>
+                    <td class="border-bottom">Annie Smith</td>
+                    <td class="border-bottom">annie.smith@mail.com</td>
+                    <td class="border-bottom">YES</td>
+                    <td class="border-bottom">
+                        <a href="">
+                            <i class="material-icons">
+                                remove_red_eye
+                            </i>
+                        </a>
+                    </td>
+                    <td class="border-bottom">
+                        <a href="">
+                            <i class="material-icons">
+                                edit
+                            </i>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- pagination -->
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            <li class="page-item">
+                <a class="page-link text-high-light border-high-light p-1" href="#" aria-label="Previous">
+                    <i class="material-icons ">navigate_before</i>
+                </a>
+            </li>
+            <li class="page-item active">
+                <a class="page-link text-high-light border-high-light" href="#">1</a>
+            </li>
+            <li class="page-item"><a class="page-link text-high-light border-high-light" href="#">2</a></li>
+            <li class="page-item"><a class="page-link text-high-light border-high-light" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link text-high-light border-high-light p-1" href="#" aria-label="Next">
+                    <i class="material-icons">navigate_next</i>
+                </a>
+            </li>
+        </ul>
+    </nav>
 </div>
