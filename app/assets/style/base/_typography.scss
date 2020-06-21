@@ -1,14 +1,14 @@
 $base-font-size: 1rem;
 $base-line-height: 1.5;
 
-@function toRem($unit) {
-    @return ($unit / $base-font-size) * 1rem;
-}
+// @function toRem($unit) {
+//     @return ($unit / $base-font-size) * 1rem;
+// }
 
-$font-xl: toRem(80px);
-$font-l: toRem(64px);
-$font-m: toRem(24px);
-$font-s: toRem(20px);
+// $font-xl: toRem(80px);
+// $font-l: toRem(64px);
+// $font-m: toRem(24px);
+// $font-s: toRem(20px);
 
 body,
 html {
@@ -27,9 +27,3 @@ h3 {
 h4 {
     font-size: 16px;
 }
-// .h5 {
-//     font-size: 20px;
-//     @include media-breakpoint-up(xl) {
-//         font-size: 24px;
-//     }
-// }
